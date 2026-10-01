@@ -1,0 +1,45 @@
+clear
+close all
+
+x = (-5:0.6:5);
+
+y = sqrt(x);
+
+y_pask =  y(length(y));
+
+z = (x .* y) / y_pask;
+
+disp('Vienmaciai masyvai: z ='); disp(z);
+%% 
+clear
+close all
+
+X = [2*sqrt(2) log(2);
+     2^5       2*pi;
+     3*sqrt(2) exp(2)];
+
+v = [2*sqrt(2); 5; 2^(-2)];
+X = [X v];
+
+D = det(X);
+
+disp('Matrica X po stulpelio iterpimo:'); disp(X);
+disp('Determinantas:'); disp(D);
+%% 
+clear
+close all
+
+A = 8;
+f = 5;
+sigma = 1.8;
+U1 = 5;
+U2 = 3;
+
+t = 0:0.005:1.5;
+s = A * cos(2*pi*f*t);
+n = sigma * randn(size(t));
+sn = s + n;
+
+atrinktos = sn(sn > U1);
+
+sf
