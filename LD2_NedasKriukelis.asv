@@ -42,4 +42,24 @@ sn = s + n;
 
 atrinktos = sn(sn > U1);
 
-sf
+sf = sn;
+sf(abs(sf) < U2) = 0;
+
+dydis_nefiltr = length(sn);
+
+dydis_atrinktu = length(atrinktos);
+
+sf_max = max(sf);
+sf_min = -max(-sf);
+
+disp('Nefiltruoto signalo dydis:'); disp(dydis_nefiltr);
+disp('Atrinktu reiksmiu >U1 dydis:'); disp(dydis_atrinktu);
+disp('Filtruoto signalo didziausia reiksme:'); disp(sf_max);
+disp('Filtruoto signalo maziausia reiksme:'); disp(sf_min);
+%% 
+clear
+close all
+
+A = input('Iveskite vektoriu A =');
+
+B = 

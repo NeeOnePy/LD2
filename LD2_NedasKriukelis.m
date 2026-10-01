@@ -56,3 +56,16 @@ disp('Nefiltruoto signalo dydis:'); disp(dydis_nefiltr);
 disp('Atrinktu reiksmiu >U1 dydis:'); disp(dydis_atrinktu);
 disp('Filtruoto signalo didziausia reiksme:'); disp(sf_max);
 disp('Filtruoto signalo maziausia reiksme:'); disp(sf_min);
+%% 
+clear
+close all
+
+A = input('Iveskite vektoriu A =');
+
+B = A(2:2:end);
+
+C = A(1:2:end);
+C = C(end:-1:1);
+
+disp('vektorius B yra:'); disp(B);
+disp('vektorius C yra:'); disp(C);
